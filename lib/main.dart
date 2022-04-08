@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import './category_meals_screen.dart';
 import './categories_screen.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Khana Khao',
       theme: ThemeData(
-        canvasColor: Color.fromRGBO(255, 254, 229, 1),
+        canvasColor: const Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
         colorScheme: ColorScheme.fromSwatch(
           primarySwatch: Colors.purple,
@@ -25,19 +26,22 @@ class MyApp extends StatelessWidget {
           secondary: Colors.amber,
         ),
         textTheme: ThemeData.light().textTheme.copyWith(
-            bodyText1: TextStyle(
+            bodyText1: const TextStyle(
               color: Color.fromRGBO(20, 51, 51, 1),
             ),
-            bodyText2: TextStyle(
+            bodyText2: const TextStyle(
               color: Color.fromRGBO(20, 51, 51, 1),
             ),
-            headline6: TextStyle(
+            headline6: const TextStyle(
               fontSize: 20,
               fontFamily: 'RobotoCondensed',
               fontWeight: FontWeight.bold,
             )),
       ),
       home: const CategoriesScreen(),
+      routes: {
+        '/category-meals': (context) => const CategoryMealsScreen(),
+      },
     );
   }
 }
