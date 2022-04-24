@@ -28,12 +28,12 @@ class MainDrawer extends StatelessWidget {
           Container(
             height: 120,
             width: double.infinity,
-            padding: EdgeInsets.fromLTRB(25, 60, 20, 0),
+            padding: EdgeInsets.fromLTRB(20, 30, 20, 0),
             alignment: Alignment.centerLeft,
             color: Theme.of(context).colorScheme.primary,
             child: Text('Cooking Up!',
                 style: TextStyle(
-                  fontWeight: FontWeight.w800,
+                  fontWeight: FontWeight.w900,
                   fontSize: 30,
                   color: Colors.white,
                 )),
